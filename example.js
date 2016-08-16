@@ -58,6 +58,8 @@ function addSky () {
 }
 
 function init () {
+  document.body.style.cssText = 'margin: 0; padding: 0; overflow: hidden';
+
   camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 1, 1000);
   camera.position.z = 5;
   camera.position.y = 1.85;
@@ -85,8 +87,8 @@ function init () {
 
   var image = new Image();
   image.src = 'emoji/1f608.gif';
-  image.style.cssText = 'position: absolute; z-index: 1000;';
-  document.body.appendChild(image);
+  // image.style.cssText = 'position: absolute; z-index: 1000;';
+  // document.body.appendChild(image);
 
   image.onload = () => {
     console.time('voxelise');
@@ -185,7 +187,7 @@ function init () {
   window.addEventListener('resize', onWindowResize, false);
 
   document.body.addEventListener('click', () => {
-    effect.setFullScreen(true);
+    effect.requestPresent();
   });
 }
 
