@@ -1,0 +1,27 @@
+{
+  "name": "three-voxel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bnolan/three-voxel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bnolan/three-voxel/issues"
+  },
+  "homepage": "https://github.com/bnolan/three-voxel#readme",
+  "dependencies": {
+    "ao-mesher": "^0.2.10",
+    "ndarray": "^1.0.18",
+    "three": "^0.79.0"
+  },
+  "devDependencies": {
+    "get-image-pixels": "^1.0.1"
+  }
+}
